@@ -1,0 +1,552 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+.LOGO
+{
+	TEXT-ALIGN : CENTER;
+}
+
+.GETIN
+{
+	TEXT-ALIGN : CENTER;
+	TOP:50%;
+}
+
+input[type=text] {
+	display: inline-block;
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			background-color: rgba(255, 255, 255, 0.1);
+			text-decoration: none;
+			border-radius: 30px;
+			font-size: 18px;
+			padding: 5px 10px;
+			transition-property: border;
+			transition-duration: .1s;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    TEXT-ALIGN : CENTER;
+	color: rgba(255, 255, 255, 0.9);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    TEXT-ALIGN : CENTER;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    TEXT-ALIGN : CENTER;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+.button_get_in {
+			display: inline-block;
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			background-color: rgba(255, 255, 255, 0.1);
+			text-decoration: none;
+			border-radius: 50%;
+			font-size: 18px;
+			padding: 10px;
+			transition-property: border;
+			transition-duration: .1s;
+		}
+		.button_get_in:hover {
+			border: 1px solid rgba(255, 255, 255, 0.6);
+			background-color: rgba(255, 255, 255, 0.6);
+			transition-property: border;
+			transition-duration: .1s;
+		}
+.buttalign{
+		text-align: center;
+		}
+
+
+
+
+
+@media (min-width: 1281px) {
+	.CONTAINER {
+		width: 100%;
+		max-width: 1024px;
+		padding: 0 40%;
+		margin: 0 auto;	
+	}
+	#PANEL {
+		position: fixed; /* положение */
+		bottom: 15px; /* отступ сверху */
+		left: 0; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		width: 50px; /* ширина блока */
+		height: 50px; /* высота блока */
+		font: 14px Arial; /* размер и тип шрифта */
+		color: #fff; /* цвет текста */
+		text-align: center; /* выравнивание текста по центру */
+		padding: 5px; /* отступы от границ внутри блока */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+	/* СКРЫТЫЙ БЛОК */
+	#HIDDEN_PANEL {
+		position: fixed; /* положение */
+		bottom: 10px; /* отступ сверху */
+		left: -740px; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		color: #fff; /* цвет текста */
+		width: 720px; /* ширина блока */
+		height: 400px; /* высота блока */
+		padding: 10px; /* отступы от границ внутри блока */
+		text-align: left; /* выравнивание текста */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+	#PANEL:hover {
+		left: 740px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+		background-color: rgba(255, 255, 255, 0.25); 
+	}
+	#PANEL:hover #HIDDEN_PANEL {
+		left: 0; /* отступ слева */
+	}	
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+		.CONTAINER 
+		{
+			width: 100%;
+			max-width: 1024px;
+			padding: 0 40%;
+			margin: 0 auto;	
+		}
+		#PANEL 
+		{
+			position: fixed; /* положение */
+			BOTTOM: 15PX; /* отступ сверху */
+			left: 0; /* отступ слева */
+			background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+			width: 50px; /* ширина блока */
+			height: 50px; /* высота блока */
+			font: 14px Arial; /* размер и тип шрифта */
+			color: #fff; /* цвет текста */
+			text-align: center; /* выравнивание текста по центру */
+			padding: 5px; /* отступы от границ внутри блока */
+
+			-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+			-moz-transition-duration: 0.3s;
+			-o-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+
+			-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+			-moz-border-radius: 0 5px 5px 0;
+			border-radius: 0 5px 5px 0;
+		}
+
+		/* СКРЫТЫЙ БЛОК */
+		#HIDDEN_PANEL {
+			position: fixed; /* положение */
+			bottom: 10px; /* отступ сверху */
+			left: -740px; /* отступ слева */
+			background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+			color: #fff; /* цвет текста */
+			width: 720px; /* ширина блока */
+			height: 410px; /* высота блока */
+			padding: 10px; /* отступы от границ внутри блока */
+			text-align: left; /* выравнивание текста */
+
+			-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+			-moz-transition-duration: 0.3s;
+			-o-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+
+			-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+			-moz-border-radius: 0 5px 5px 0;
+			border-radius: 0 5px 5px 0;
+		}
+		#PANEL:hover {
+			left: 740px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+		}
+		#PANEL:hover #HIDDEN_PANEL {
+			left: 0; /* отступ слева */
+		}
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+   .CONTAINER 
+   {
+		width: 100%;
+		max-width: 100px;
+		padding: 0 40%;
+		margin: 0 auto;	
+	}
+	#PANEL
+	{
+		position: fixed; /* положение */
+		BOTTOM: 0; /* отступ сверху */
+		left: 0; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		width: 100%; /* ширина блока */
+		height: 50px; /* высота блока */
+		font: 14px Arial; /* размер и тип шрифта */
+		color: #fff; /* цвет текста */
+		text-align: center; /* выравнивание текста по центру */
+		padding: 5px; /* отступы от границ внутри блока */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+
+	/* СКРЫТЫЙ БЛОК */
+	#HIDDEN_PANEL 
+	{
+		left: 0;
+		position: fixed; /* положение */
+		 /* отступ сверху */
+		BOTTOM: -200px; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		color: #fff; /* цвет текста */
+		width: 100%; /* ширина блока */
+		height: 200px; /* высота блока */
+		 /* отступы от границ внутри блока */
+		text-align: CENTER; /* выравнивание текста */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+	#PANEL:hover 
+	{
+		BOTTOM: 200PX; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+	}
+	#PANEL:hover #HIDDEN_PANEL 
+	{
+		BOTTOM: 0; /* отступ слева */
+	}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+   .CONTAINER 
+   {
+		width: 100%;
+		max-width: 100px;
+		padding: 0 40%;
+		margin: 0 auto;	
+	}
+	#ytplayer
+	{
+		WIDTH: 760PX;
+		HEIGHT: 440PX;
+	}
+	#PANEL
+	{
+		position: fixed; /* положение */
+		BOTTOM: 0; /* отступ сверху */
+		left: 0; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		width: 100%; /* ширина блока */
+		height: 50px; /* высота блока */
+		font: 14px Arial; /* размер и тип шрифта */
+		color: #fff; /* цвет текста */
+		text-align: center; /* выравнивание текста по центру */
+		padding: 5px; /* отступы от границ внутри блока */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+
+	/* СКРЫТЫЙ БЛОК */
+	#HIDDEN_PANEL 
+	{
+		left: 0;
+		position: fixed; /* положение */
+		 /* отступ сверху */
+		BOTTOM: -450px; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		color: #fff; /* цвет текста */
+		width: 100%; /* ширина блока */
+		height: 450px; /* высота блока */
+		 /* отступы от границ внутри блока */
+		text-align: CENTER; /* выравнивание текста */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+	#PANEL:hover 
+	{
+		BOTTOM: 450PX; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+	}
+	#PANEL:hover #HIDDEN_PANEL 
+	{
+		BOTTOM: 0; /* отступ слева */
+	}
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+   .CONTAINER 
+   {
+		width: 100%;
+		max-width: 100px;
+		padding: 0 40%;
+		margin: 0 auto;	
+	}
+	.DISPLAY
+	{
+		TEXT-ALIGN:CENTER;
+	}
+	#ytplayer
+	{
+		WIDTH: 481PX;
+		HEIGHT: 250PX;
+	}
+	#PANEL
+	{
+		position: fixed; /* положение */
+		BOTTOM: 0; /* отступ сверху */
+		left: 0; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		width: 100%; /* ширина блока */
+		height: 50px; /* высота блока */
+		font: 14px Arial; /* размер и тип шрифта */
+		color: #fff; /* цвет текста */
+		text-align: center; /* выравнивание текста по центру */
+		padding: 5px; /* отступы от границ внутри блока */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+
+	/* СКРЫТЫЙ БЛОК */
+	#HIDDEN_PANEL 
+	{
+		left: 0;
+		position: fixed; /* положение */
+		 /* отступ сверху */
+		BOTTOM: -290px; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		color: #fff; /* цвет текста */
+		width: 100%; /* ширина блока */
+		height: 290px; /* высота блока */
+		 /* отступы от границ внутри блока */
+		text-align: left; /* выравнивание текста */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+	#PANEL:hover 
+	{
+		BOTTOM: 290PX; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+	}
+	#PANEL:hover #HIDDEN_PANEL 
+	{
+		BOTTOM: 0; /* отступ слева */
+	}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+   .CONTAINER 
+   {
+		width: 100%;
+		max-width: 100px;
+		padding: 0 40%;
+		margin: 0 auto;	
+	}
+	#ytplayer
+	{
+		WIDTH: 320PX;
+		HEIGHT: 240PX;
+	}
+	.DISPLAY
+	{
+		TEXT-ALIGN : CENTER;
+	}
+	
+	#PANEL
+	{
+		position: fixed; /* положение */
+		BOTTOM: 0; /* отступ сверху */
+		left: 0; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		width: 100%; /* ширина блока */
+		height: 50px; /* высота блока */
+		font: 14px Arial; /* размер и тип шрифта */
+		color: #fff; /* цвет текста */
+		text-align: center; /* выравнивание текста по центру */
+		padding: 5px; /* отступы от границ внутри блока */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+
+	/* СКРЫТЫЙ БЛОК */
+	#HIDDEN_PANEL 
+	{
+		left: 0;
+		position: fixed; /* положение */
+		 /* отступ сверху */
+		BOTTOM: -250px; /* отступ слева */
+		background-color: rgba(255, 255, 255, 0.2); /* цвет фона */
+		color: #fff; /* цвет текста */
+		width: 100%; /* ширина блока */
+		height: 250px; /* высота блока */
+		 /* отступы от границ внутри блока */
+		text-align: left; /* выравнивание текста */
+
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+		-moz-transition-duration: 0.3s;
+		-o-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+
+		-webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 5px 5px 0;
+		border-radius: 0 5px 5px 0;
+	}
+	#PANEL:hover 
+	{
+		BOTTOM: 250PX; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+	}
+	#PANEL:hover #HIDDEN_PANEL 
+	{
+		BOTTOM: 0; /* отступ слева */
+	}
+  
+}
+
+.GRADIENT
+{
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+}
+}
+@-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+		 @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
